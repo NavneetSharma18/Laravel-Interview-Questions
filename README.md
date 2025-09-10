@@ -46,3 +46,6 @@ Service providers are like the “startup scripts” of Laravel. They prepare an
 **register() method →** here the provider registers things in the service container (bindings, configs, etc.).
 
 **boot() method →** here things are finalized, because now all services are available.
+
+##### php artisan make:provider CustomServiceProvider
+
