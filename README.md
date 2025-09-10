@@ -50,4 +50,18 @@ Service providers are like the “startup scripts” of Laravel. They prepare an
 ##### php artisan make:provider CustomServiceProvider
 
 ## Facades
+Facades provide a "static" interface to classes that are available in the application's service container.
+```php
+use Illuminate\Support\Facades\App;
+$cache = app('cache');
+$cache->put('name', 'Navneet', 10);
+```
+We can use above method but here we are using services from App container same code can be written as 
+
+```php
+  Cache::put('name', 'Navneet', 10);
+
+```
+shortcut for using the services
+
 
