@@ -49,3 +49,5 @@ Service providers are like the “startup scripts” of Laravel. They prepare an
 
 ##### php artisan make:provider CustomServiceProvider
 
+## Facades
+
