@@ -31,3 +31,18 @@ class OrderController extends Controller
 
 ```
 ##### 👉 Here, Laravel sees that OrderController needs a PaymentGateway, so it looks inside the Service Container and provides it. You don’t write new PaymentGateway().
+
+## Service Providers
+Think of a service provider as a “starter/initializer” for different features in Laravel.
+
+Database ✔️
+Queue ✔️
+Validation ✔️
+Routing ✔️
+
+All these features don’t magically appear — they are bootstrapped (started up) by service providers
+Service providers are like the “startup scripts” of Laravel. They prepare and launch all the features your app needs. First register() prepares things, then boot() starts them.
+
+**register() method →** here the provider registers things in the service container (bindings, configs, etc.).
+
+**boot() method →** here things are finalized, because now all services are available.
