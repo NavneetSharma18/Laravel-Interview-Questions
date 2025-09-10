@@ -32,7 +32,7 @@ class OrderController extends Controller
 ```
 ##### 👉 Here, Laravel sees that OrderController needs a PaymentGateway, so it looks inside the Service Container and provides it. You don’t write new PaymentGateway().
 
-## Service Providers
+## Service Providers (Service provider ko bind krna padta hai service container me )
 Think of a service provider as a “starter/initializer” for different features in Laravel.
 
 Database ✔️
